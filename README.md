@@ -1,4 +1,4 @@
-# SISKAMLING
+# LaundryPro
 LaundryPro adalah Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit nobis, dicta velit non voluptate hic, accusantium soluta repellat debitis obcaecati maiores a tenetur quis quaerat aliquid quas. Maiores voluptates necessitatibus tempore, nihil asperiores quod facilis repudiandae, sed doloremque voluptas iure, modi quaerat eaque quo veniam aspernatur nobis magni harum.
 
 ## Features
