@@ -1,8 +1,13 @@
 # LaundryPro
-LaundryPro adalah Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit nobis, dicta velit non voluptate hic, accusantium soluta repellat debitis obcaecati maiores a tenetur quis quaerat aliquid quas. Maiores voluptates necessitatibus tempore, nihil asperiores quod facilis repudiandae, sed doloremque voluptas iure, modi quaerat eaque quo veniam aspernatur nobis magni harum.
+LaundryPro adalah sebuah platform web pemesanan laundry yang memudahkan pengguna untuk mengatur dan memesan layanan laundry mereka secara efisien. Aplikasi ini mencakup dua sisi pengguna yaitu Admin dan Pelanggan, yang memiliki fungsionalitas masing-masing. Aplikasi web LaundryPro ini bertujuan untuk menyediakan kemudahan dan kenyamanan bagi pengguna yang ingin menjaga pakaian mereka tetap bersih dan rapi tanpa harus repot datang ke tempat laundry.
 
 ## Features
+- Informasi Layanan Laundry
 - Pemesanan Laundry
+- Metode Pembayaran
+- Riwayat Pemesanan
+- Pengaturan Akun
+- Layanan Kontak
 - Halaman Administrator
 
 ## Tech
