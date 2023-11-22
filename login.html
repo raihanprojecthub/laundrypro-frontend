@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - LaundryPro</title>
+  <link rel="shortcutcut icon" href="dist/img/laundrypro-logo.png">
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+  <!-- Login Section Start -->
+  <section id="login" style="background-image: url(dist/img/bg-login.png);" class="relative h-screen bg-cover bg-center bg-no-repeat flex justify-center items-center px-4 md:px-0">
+    <div class="bg-primary flex flex-row items-center max-w-4xl" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+      <img src="dist/img/login-image.png" alt="Gambar Login" class="hidden md:block max-w-[50%] h-auto">
+      <div class="flex-1 px-8 md:px-16 text-center mt-10">
+        <h2 class="text-xl text-white font-semibold mb-1">LOGIN</h2>
+        <span class="text-slate-300">Silahkan masuk ke akun anda</span>
+        <form class="text-left mt-10">
+          <div class="flex relative items-center mb-8">
+            <a href="#"
+              class="absolute left-0 flex h-14 w-14 rounded-full items-center justify-center bg-slate-100 text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="30"
+                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+              </svg>
+            </a>
+            <input type="text" id="email" name="email" class="w-full bg-slate-200 text-sm py-3 pl-16 rounded-3xl outline-none" placeholder="Email atau Username" required>
+          </div>
+          <div class="flex relative items-center mb-12">
+            <a href="#"
+              class="absolute left-0 flex h-14 w-14 rounded-full items-center justify-center bg-slate-100 text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="30"
+                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z" />
+                <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
+              </svg>
+            </a>
+            <input type="password" id="password" name="password" class="w-full bg-slate-200 text-sm py-3 pl-16 rounded-3xl outline-none" placeholder="Password" required>
+          </div>
+          
+          <a href="src/pelanggan/beranda.html" class="block text-center w-full text-sm font-bold py-3 bg-slate-100 rounded-full">Login</a>
+        </form>
+        <p class="mt-2 text-slate-300 text-sm">Belum Punya Akun? <a href="register.html" class="text-white">Daftar</a></p>
+        <a href="src/admin/dashboard.html" class="block mt-8 text-center w-full text-sm font-bold py-3 text-transparent bg-transparent rounded-full">Login</a>
+      </div>
+    </div>
+  </section>
+  <!-- Login Section End -->
+</body>
+</html>
