@@ -25,44 +25,19 @@
   <!-- Navbar Section Start -->
   <nav class="bg-primary fixed w-full z-50">
     <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-8 py-4 xl:px-0">
-      <button id="sidebar-button" data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar"
-        type="button"
+      <button id="sidebar-button" data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar"
+        aria-controls="logo-sidebar" type="button"
         class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
         <span class="sr-only">Open sidebar</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg">
-          <path clip-rule="evenodd" fill-rule="evenodd"
-            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
-          </path>
-        </svg>
+        <img src="../../dist/icon/sidebar.svg" alt="" class="w-6 h-6">
       </button>
       <img src="../../dist/img/laundrypro-logo-putih.png" class="h-10" alt="LaundryPro Logo" />
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
         <div class="flex items-center gap-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell-ringing-filled text-white" width="24"
-            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M17.451 2.344a1 1 0 0 1 1.41 -.099a12.05 12.05 0 0 1 3.048 4.064a1 1 0 1 1 -1.818 .836a10.05 10.05 0 0 0 -2.54 -3.39a1 1 0 0 1 -.1 -1.41z"
-              stroke-width="0" fill="currentColor" />
-            <path
-              d="M5.136 2.245a1 1 0 0 1 1.312 1.51a10.05 10.05 0 0 0 -2.54 3.39a1 1 0 1 1 -1.817 -.835a12.05 12.05 0 0 1 3.045 -4.065z"
-              stroke-width="0" fill="currentColor" />
-            <path
-              d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.98 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z"
-              stroke-width="0" fill="currentColor" />
-            <path
-              d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z"
-              stroke-width="0" fill="currentColor" />
-          </svg>
-          <div class="relative hidden md:block md:w-64">
+          <img src="../../dist/icon/notification.svg" alt="" class="text-white" width="24">
+          <div class="relative hidden md:block lg:w-64">
             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                  clip-rule="evenodd"></path>
-              </svg>
+              <img src="../../dist/icon/search.svg" alt="" class="w-5 h-5 text-gray-400">
             </div>
             <input type="text" name="email" id="topbar-search"
               class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full pl-10 p-2.5"
@@ -74,17 +49,15 @@
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="navbar-cta" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
+          <img src="../../dist/icon/navbar.svg" alt="" class="w-5 h-5">
         </button>
       </div>
-      
+  
+  
     </div>
   </nav>
   <!-- Navbar Section End -->
-
+  
   <!-- Sidebar Section Start -->
   <aside id="sidebar"
     class="fixed top-0 left-0 z-40 w-72 h-screen pt-20 transition-transform -translate-x-full bg-primary sm:translate-x-0"
@@ -95,70 +68,36 @@
           <ul class="space-y-2 font-medium pt-8">
             <li class="pt-2">
               <a href="dashboard.html">
-                <div href="#admin-dashboard" class="flex items-center p-2 text-white hover:text-dark hover:bg-gray-200 hover:bg-opacity-80 transition duration-300 rounded-lg group">
-                  <svg class="w-6 h-6 group-hover:text-dark" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.6667 3.5H3.5V11.6667H11.6667V3.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path d="M24.4999 3.5H16.3333V11.6667H24.4999V3.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path d="M24.4999 16.3334H16.3333V24.5H24.4999V16.3334Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path d="M11.6667 16.3334H3.5V24.5H11.6667V16.3334Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
+                <div href="#admin-dashboard"
+                  class="flex items-center p-2 text-white hover:text-dark hover:bg-gray-200 hover:bg-opacity-80 transition duration-300 rounded-lg group">
+                  <img src="../../dist/icon/dashbord.svg" alt="" class="w-6 h-6 group-hover:brightness-0">
                   <span class="ms-4">Dashboard</span>
                 </div>
               </a>
             </li>
             <li class="pt-2">
               <a href="manajemen-order.html">
-                <div href="#admin-order" class="flex items-center p-2 text-white hover:text-dark hover:bg-gray-200 hover:bg-opacity-80 transition duration-300 rounded-lg group">
-                  <svg class="w-6 h-6 group-hover:text-dark"" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10.4999 25.6667C11.1443 25.6667 11.6666 25.1444 11.6666 24.5C11.6666 23.8557 11.1443 23.3334 10.4999 23.3334C9.85559 23.3334 9.33325 23.8557 9.33325 24.5C9.33325 25.1444 9.85559 25.6667 10.4999 25.6667Z"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M23.3334 25.6667C23.9777 25.6667 24.5001 25.1444 24.5001 24.5C24.5001 23.8557 23.9777 23.3334 23.3334 23.3334C22.6891 23.3334 22.1667 23.8557 22.1667 24.5C22.1667 25.1444 22.6891 25.6667 23.3334 25.6667Z"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M1.16675 1.16663H5.83341L8.96008 16.7883C9.06677 17.3254 9.35897 17.8079 9.78555 18.1513C10.2121 18.4947 10.7459 18.6771 11.2934 18.6666H22.6334C23.1809 18.6771 23.7147 18.4947 24.1413 18.1513C24.5679 17.8079 24.8601 17.3254 24.9667 16.7883L26.8334 6.99996H7.00008"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                <div href="#admin-order"
+                  class="flex items-center p-2 text-white hover:text-dark hover:bg-gray-200 hover:bg-opacity-80 transition duration-300 rounded-lg group">
+                  <img src="../../dist/icon/manajemen-order.svg" alt="" class="w-6 h-6 group-hover:brightness-0">
                   <span class="ms-4">Manajemen Order</span>
                 </div>
               </a>
             </li>
             <li class="pt-2">
               <a href="manajemen-user.html">
-                <div href="#admin-user" class="flex items-center p-2 text-white hover:text-dark hover:bg-gray-200 hover:bg-opacity-80 transition duration-300 rounded-lg group">
-                  <svg class="w-6 h-6 group-hover:text-dark" viewBox="0 0 32 25" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M22.3637 23.4078V20.918C22.3637 19.5973 21.8273 18.3307 20.8726 17.3969C19.9178 16.463 18.6229 15.9384 17.2727 15.9384H7.09092C5.74072 15.9384 4.44583 16.463 3.49109 17.3969C2.53636 18.3307 2 19.5973 2 20.918V23.4078"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M12.1817 10.9593C14.9934 10.9593 17.2727 8.72985 17.2727 5.97966C17.2727 3.22947 14.9934 1 12.1817 1C9.3701 1 7.09082 3.22947 7.09082 5.97966C7.09082 8.72985 9.3701 10.9593 12.1817 10.9593Z"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M30.0001 23.4084V20.9185C29.9992 19.8152 29.6238 18.7434 28.9327 17.8714C28.2416 16.9994 27.2741 16.3765 26.1819 16.1007"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M21.0908 1.16138C22.1859 1.43563 23.1565 2.05859 23.8496 2.93203C24.5428 3.80548 24.919 4.87973 24.919 5.98542C24.919 7.09112 24.5428 8.16537 23.8496 9.03881C23.1565 9.91226 22.1859 10.5352 21.0908 10.8095"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                <div href="#admin-user"
+                  class="flex items-center p-2 text-white hover:text-dark hover:bg-gray-200 hover:bg-opacity-80 transition duration-300 rounded-lg group">
+                  <img src="../../dist/icon/manajemen-user.svg" alt="" class="w-6 h-6 group-hover:brightness-0">
                   <span class="ms-4">Manajemen User</span>
                 </div>
               </a>
             </li>
             <li class="pt-2">
               <a href="laporan-pelanggan.html">
-                <div href="#admin-laporan" class="flex items-center p-2 text-white hover:text-dark hover:bg-gray-200 hover:bg-opacity-80 transition duration-300 rounded-lg group">
-                  <svg class="w-6 h-6 group-hover:text-dark" viewBox="0 0 28 29" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M25.6667 20.1485V23.6485C25.668 23.9734 25.6014 24.295 25.4713 24.5927C25.3411 24.8904 25.1502 25.1577 24.9108 25.3773C24.6713 25.597 24.3887 25.7642 24.0809 25.8683C23.7731 25.9724 23.4469 26.0111 23.1233 25.9818C19.5333 25.5917 16.0848 24.365 13.055 22.4001C10.2361 20.6089 7.84623 18.219 6.055 15.4001C4.08331 12.3566 2.85629 8.89131 2.47334 5.28515C2.44418 4.96252 2.48252 4.63737 2.58592 4.33037C2.68932 4.02338 2.8555 3.74128 3.0739 3.50204C3.29229 3.26279 3.55811 3.07164 3.85443 2.94075C4.15074 2.80987 4.47107 2.74212 4.795 2.74181H8.295C8.86119 2.73624 9.41009 2.93674 9.83939 3.30593C10.2687 3.67513 10.5491 4.18783 10.6283 4.74848C10.7761 5.86856 11.05 6.96833 11.445 8.02681C11.602 8.44439 11.6359 8.89821 11.5429 9.33451C11.4498 9.7708 11.2337 10.1713 10.92 10.4885L9.43834 11.9701C11.0992 14.8909 13.5175 17.3093 16.4383 18.9701L17.92 17.4885C18.2372 17.1748 18.6377 16.9586 19.074 16.8656C19.5103 16.7725 19.9641 16.8065 20.3817 16.9635C21.4402 17.3585 22.5399 17.6324 23.66 17.7801C24.2267 17.8601 24.7443 18.1456 25.1143 18.5822C25.4843 19.0189 25.6809 19.5763 25.6667 20.1485Z"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                <div href="#admin-laporan"
+                  class="flex items-center p-2 text-white hover:text-dark hover:bg-gray-200 hover:bg-opacity-80 transition duration-300 rounded-lg group">
+                  <img src="../../dist/icon/laporan-pelanggan.svg" alt="" class="w-6 h-6 group-hover:brightness-0">
                   <span class="ms-4">Laporan Pelanggan</span>
                 </div>
               </a>
@@ -168,15 +107,8 @@
         <div>
           <ul class="space-y-2 font-medium pb-8 ">
             <li class="pt-2">
-              <a href="../../index.html" class="flex items-center p-2 text-dark bg-gray-200 rounded-lg group">
-                <svg class="w-6 h-6 text-dark" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M13.5 19.4084H17.5C18.0304 19.4084 18.5391 19.1977 18.9142 18.8227C19.2893 18.4476 19.5 17.9389 19.5 17.4084V3.40845C19.5 2.87801 19.2893 2.36931 18.9142 1.99423C18.5391 1.61916 18.0304 1.40845 17.5 1.40845H13.5"
-                    stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M6.5 15.4084L1.5 10.4084L6.5 5.40845" stroke="#262626" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path d="M1.5 10.4084H13.5" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+              <a href="../../index.html" class="flex items-center p-2 text-dark rounded-lg bg-gray-200 group">
+                <img src="../../dist/icon/logout.svg" alt="" class="w-6 h-6 brightness-0">
                 <span class="ms-4">Keluar</span>
               </a>
             </li>
@@ -191,15 +123,10 @@
   <section class="p-4 sm:ml-[17rem] scroll">
     <div class="py-8 px-4 md:px-10 mt-16">
 
-      <h4 class="mb-4 text-lg font-bold text-dark md:text-2xl">Manajemen Cuci Kiloan</h4>
+      <h4 class="mb-4 text-lg font-bold text-dark md:text-2xl">Manajemen Cuci Satuan</h4>
       <div class="overflow-auto border border-gray-300 rounded-md p-4 mb-8">
-        <a href=""><button class="mb-2 py-2 px-4 text-white bg-primary rounded-md">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus inline mb-1" width="20"
-            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M12 5l0 14" />
-            <path d="M5 12l14 0" />
-          </svg>
+        <a href="tambah-satuan.html"><button class="mb-2 py-2 px-4 text-white bg-primary rounded-md">
+          <img src="../../dist/icon/plus.svg" alt="" class="inline mb-1" width="20">
           Tambah Pesanan</button></a>
         <table id="datatablesSimple" class="text-start text-xs md:text-sm">
           <thead>
@@ -208,7 +135,6 @@
               <th>Nama</th>
               <th>Jenis Paket</th>
               <th>Status Pesanan</th>
-              <th>Metode Pembayaran</th>
               <th>Per/Pcs</th>
               <th>Harga Paket</th>
               <th>Sub Total</th>
@@ -221,7 +147,6 @@
               <th>Nama</th>
               <th>Jenis Paket</th>
               <th>Status Pesanan</th>
-              <th>Metode Pembayaran</th>
               <th>Per/Pcs</th>
               <th>Harga Paket</th>
               <th>Sub Total</th>
@@ -234,13 +159,12 @@
               <td>Arif Aditya Pratama</td>
               <td>Karpet</td>
               <td>Proses Selesai</td>
-              <td>Transfer Bank</td>
               <td>1</td>
               <td>40.000</td>
               <td>40.000</td>
               <td>
                 <div class="w-full flex flex-wrap justify-center align-center gap-1">
-                  <a href="" class="text-center py-2 px-3 text-white bg-green-600 rounded"><i class="fa-solid fa-pen-to-square pe-1"></i>Proses</a>
+                  <a href="proses-satuan.html" class="text-center py-2 px-3 text-white bg-green-600 rounded"><i class="fa-solid fa-pen-to-square pe-1"></i>Proses</a>
                   <a href="" class="text-center py-2 px-2 text-white bg-red-600 rounded"><i class="fa-solid fa-trash pe-1"></i>Hapus</a>
                 </div>
               </td>
@@ -250,13 +174,12 @@
               <td>Divasetya Pratama</td>
               <td>Handuk</td>
               <td>Proses Selesai</td>
-              <td>COD</td>
               <td>1</td>
               <td>15.000</td>
               <td>15.000</td>
               <td>
                 <div class="w-full flex flex-wrap justify-center align-center gap-1">
-                  <a href="" class="text-center py-2 px-3 text-white bg-green-600 rounded"><i class="fa-solid fa-pen-to-square pe-1"></i>Proses</a>
+                  <a href="proses-satuan.html" class="text-center py-2 px-3 text-white bg-green-600 rounded"><i class="fa-solid fa-pen-to-square pe-1"></i>Proses</a>
                   <a href="" class="text-center py-2 px-2 text-white bg-red-600 rounded"><i class="fa-solid fa-trash pe-1"></i>Hapus</a>
                 </div>
               </td>
@@ -266,7 +189,6 @@
               <td>Raihan Ramadhan</td>
               <td>Keset</td>
               <td>Sedang Diproses</td>
-              <td>Belum Konfirmasi</td>
               <td>2</td>
               <td>8.000</td>
               <td>16.000</td>
@@ -281,15 +203,10 @@
         </table>
       </div>
       
-      <h4 class="mb-4 text-lg font-bold text-dark md:text-2xl">Manajemen Cuci Satuan</h4>
+      <h4 class="mb-4 text-lg font-bold text-dark md:text-2xl">Manajemen Cuci Kiloan</h4>
       <div class="overflow-auto border border-gray-300 rounded-md p-4">
-        <a href=""><button class="mb-2 py-2 px-4 text-white bg-primary rounded-md">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus inline mb-1" width="20"
-            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M12 5l0 14" />
-            <path d="M5 12l14 0" />
-          </svg>
+        <a href="tambah-kiloan.html"><button class="mb-2 py-2 px-4 text-white bg-primary rounded-md">
+          <img src="../../dist/icon/plus.svg" alt="" class="inline mb-1" width="20">
           Tambah Pesanan</button></a>
         <table id="datatablesSimpel" class="text-start text-xs md:text-sm">
           <thead>
@@ -298,7 +215,6 @@
               <th>Nama</th>
               <th>Jenis Paket</th>
               <th>Status Pesanan</th>
-              <th>Metode Pembayaran</th>
               <th>Berat</th>
               <th>Harga Paket</th>
               <th>Sub Total</th>
@@ -311,7 +227,6 @@
               <th>Nama</th>
               <th>Jenis Paket</th>
               <th>Status Pesanan</th>
-              <th>Metode Pembayaran</th>
               <th>Berat</th>
               <th>Harga Paket</th>
               <th>Sub Total</th>
@@ -324,13 +239,12 @@
               <td>Agil Fernando</td>
               <td>Cuci Saja</td>
               <td>Proses Selesai</td>
-              <td>COD</td>
               <td>5</td>
               <td>10.000</td>
               <td>50.000</td>
               <td>
                 <div class="w-full flex flex-wrap justify-center align-center gap-1">
-                  <a href="" class="text-center py-2 px-3 text-white bg-green-600 rounded"><i class="fa-solid fa-pen-to-square pe-1"></i>Proses</a>
+                  <a href="proses-kiloan.html" class="text-center py-2 px-3 text-white bg-green-600 rounded"><i class="fa-solid fa-pen-to-square pe-1"></i>Proses</a>
                   <a href="" class="text-center py-2 px-2 text-white bg-red-600 rounded"><i class="fa-solid fa-trash pe-1"></i>Hapus</a>
                 </div>
               </td>
@@ -340,13 +254,12 @@
               <td>Agustia Kuspita</td>
               <td>Cuci Lipat Rapi</td>
               <td>Proses Selesai</td>
-              <td>Transfer Bank</td>
               <td>6</td>
               <td>6.000</td>
               <td>36.000</td>
               <td>
                 <div class="w-full flex flex-wrap justify-center align-center gap-1">
-                  <a href="" class="text-center py-2 px-3 text-white bg-green-600 rounded"><i class="fa-solid fa-pen-to-square pe-1"></i>Proses</a>
+                  <a href="proses-kiloan.html" class="text-center py-2 px-3 text-white bg-green-600 rounded"><i class="fa-solid fa-pen-to-square pe-1"></i>Proses</a>
                   <a href="" class="text-center py-2 px-2 text-white bg-red-600 rounded"><i class="fa-solid fa-trash pe-1"></i>Hapus</a>
                 </div>
               </td>
@@ -356,13 +269,12 @@
               <td>Markus W.S.H Situmorang</td>
               <td>Cuci Saja</td>
               <td>Proses Selesai</td>
-              <td>COD</td>
               <td>3</td>
               <td>12.000</td>
               <td>36.000</td>
               <td>
                 <div class="w-full flex flex-wrap justify-center align-center gap-1">
-                  <a href="" class="text-center py-2 px-3 text-white bg-green-600 rounded"><i class="fa-solid fa-pen-to-square pe-1"></i>Proses</a>
+                  <a href="proses-kiloan.html" class="text-center py-2 px-3 text-white bg-green-600 rounded"><i class="fa-solid fa-pen-to-square pe-1"></i>Proses</a>
                   <a href="" class="text-center py-2 px-2 text-white bg-red-600 rounded"><i class="fa-solid fa-trash pe-1"></i>Hapus</a>
                 </div>
               </td>

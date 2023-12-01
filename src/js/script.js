@@ -1,51 +1,51 @@
 // Navbar Active Pelanggan
-  window.addEventListener('load', function () {
-    var nav = document.querySelector('nav');
-    var sections = document.querySelectorAll('body');
-    var currentSectionIndex = 0;
-    var isNavVisible = false;
+window.addEventListener('load', function () {
+  var nav = document.querySelector('nav');
+  var sections = document.querySelectorAll('body');
+  var currentSectionIndex = 0;
+  var isNavVisible = false;
 
-    for (var i = 0; i < sections.length; i++) {
-      var section = sections[i];
-      var rect = section.getBoundingClientRect();
+  for (var i = 0; i < sections.length; i++) {
+    var section = sections[i];
+    var rect = section.getBoundingClientRect();
 
-      if (rect.top <= 0 && rect.bottom > 0) {
-        currentSectionIndex = i;
-        break;
-      }
+    if (rect.top <= 0 && rect.bottom > 0) {
+      currentSectionIndex = i;
+      break;
     }
+  }
 
-    var currentSectionLink = document.querySelector('nav div[href="#' + sections[currentSectionIndex].id + '"]');
+  var currentSectionLink = document.querySelector('nav div[href="#' + sections[currentSectionIndex].id + '"]');
 
-    var rect = currentSectionLink.getBoundingClientRect();
+  var rect = currentSectionLink.getBoundingClientRect();
 
-    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-      currentSectionLink.classList.add('active-pelanggan');
-    } else {
-      currentSectionLink.classList.remove('active-pelanggan');
+  if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+    currentSectionLink.classList.add('active-pelanggan');
+  } else {
+    currentSectionLink.classList.remove('active-pelanggan');
+  }
+
+  // tambahan kode untuk menghapus class 'active'
+  for (var i = 0; i < sections.length; i++) {
+    var sectionLink = document.querySelector('nav div[href="#' + sections[i].id + '"]');
+
+    if (i !== currentSectionIndex) {
+      sectionLink.classList.remove('active-pelanggan');
     }
+  }
 
-    // tambahan kode untuk menghapus class 'active'
-    for (var i = 0; i < sections.length; i++) {
-      var sectionLink = document.querySelector('nav div[href="#' + sections[i].id + '"]');
-
-      if (i !== currentSectionIndex) {
-        sectionLink.classList.remove('active-pelanggan');
-      }
+  if (window.scrollY > 100) {
+    if (!isNavVisible) {
+      nav.style.display = 'block';
+      isNavVisible = true;
     }
-
-    if (window.scrollY > 100) {
-      if (!isNavVisible) {
-        nav.style.display = 'block';
-        isNavVisible = true;
-      }
-    } else {
-      if (isNavVisible) {
-        nav.style.display = 'none';
-        isNavVisible = false;
-      }
+  } else {
+    if (isNavVisible) {
+      nav.style.display = 'none';
+      isNavVisible = false;
     }
-  });
+  }
+});
 
 // Navbar Active Admin
 window.addEventListener('load', function () {
@@ -104,7 +104,7 @@ document.querySelector('#navbar-button').onclick = (e) => {
   e.preventDefault();
 };
 
-// Toggle class active navbar
+// Toggle class active sidebar
 const sidebarNav = document.querySelector('#sidebar');
 
 document.querySelector('#sidebar-button').onclick = (e) => {

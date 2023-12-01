@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubah User - LaundryPro</title>
+  <link rel="shortcutcut icon" href="../../dist/img/laundrypro-logo.png">
+  <link rel="stylesheet" href="../../css/output.css">
+</head>
+<body id="admin-user">
+  <!-- Navbar Section Start -->
+  <nav class="bg-primary fixed w-full z-50">
+    <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-8 py-4 xl:px-0">
+      <button id="sidebar-button" data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar"
+        aria-controls="logo-sidebar" type="button"
+        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+        <span class="sr-only">Open sidebar</span>
+        <img src="../../dist/icon/sidebar.svg" alt="" class="w-6 h-6">
+      </button>
+      <img src="../../dist/img/laundrypro-logo-putih.png" class="h-10" alt="LaundryPro Logo" />
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <div class="flex items-center gap-4">
+          <img src="../../dist/icon/notification.svg" alt="" class="text-white" width="24">
+          <div class="relative hidden md:block lg:w-64">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <img src="../../dist/icon/search.svg" alt="" class="w-5 h-5 text-gray-400">
+            </div>
+            <input type="text" name="email" id="topbar-search"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full pl-10 p-2.5"
+              placeholder="Search">
+          </div>
+          <img src="../../dist/img/foto-profile.png" alt="" class="w-11 h-11 rounded-full">
+        </div>
+        <button class="hidden" data-collapse-toggle="navbar-cta" type="button" id="navbar-button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <img src="../../dist/icon/navbar.svg" alt="" class="w-5 h-5">
+        </button>
+      </div>
+  
+  
+    </div>
+  </nav>
+  <!-- Navbar Section End -->
+  
+  <!-- Sidebar Section Start -->
+  <aside id="sidebar"
+    class="fixed top-0 left-0 z-40 w-72 h-screen pt-20 transition-transform -translate-x-full bg-primary sm:translate-x-0"
+    aria-label="Sidebar">
+    <div class="h-full px-8 pb-4 overflow-y-auto bg-primary">
+      <div class="flex flex-col h-full justify-between">
+        <div>
+          <ul class="space-y-2 font-medium pt-8">
+            <li class="pt-2">
+              <a href="dashboard.html">
+                <div href="#admin-dashboard"
+                  class="flex items-center p-2 text-white hover:text-dark hover:bg-gray-200 hover:bg-opacity-80 transition duration-300 rounded-lg group">
+                  <img src="../../dist/icon/dashbord.svg" alt="" class="w-6 h-6 group-hover:brightness-0">
+                  <span class="ms-4">Dashboard</span>
+                </div>
+              </a>
+            </li>
+            <li class="pt-2">
+              <a href="manajemen-order.html">
+                <div href="#admin-order"
+                  class="flex items-center p-2 text-white hover:text-dark hover:bg-gray-200 hover:bg-opacity-80 transition duration-300 rounded-lg group">
+                  <img src="../../dist/icon/manajemen-order.svg" alt="" class="w-6 h-6 group-hover:brightness-0">
+                  <span class="ms-4">Manajemen Order</span>
+                </div>
+              </a>
+            </li>
+            <li class="pt-2">
+              <a href="manajemen-user.html">
+                <div href="#admin-user"
+                  class="flex items-center p-2 text-white hover:text-dark hover:bg-gray-200 hover:bg-opacity-80 transition duration-300 rounded-lg group">
+                  <img src="../../dist/icon/manajemen-user.svg" alt="" class="w-6 h-6 group-hover:brightness-0">
+                  <span class="ms-4">Manajemen User</span>
+                </div>
+              </a>
+            </li>
+            <li class="pt-2">
+              <a href="laporan-pelanggan.html">
+                <div href="#admin-laporan"
+                  class="flex items-center p-2 text-white hover:text-dark hover:bg-gray-200 hover:bg-opacity-80 transition duration-300 rounded-lg group">
+                  <img src="../../dist/icon/laporan-pelanggan.svg" alt="" class="w-6 h-6 group-hover:brightness-0">
+                  <span class="ms-4">Laporan Pelanggan</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-2 font-medium pb-8 ">
+            <li class="pt-2">
+              <a href="../../index.html" class="flex items-center p-2 text-dark rounded-lg bg-gray-200 group">
+                <img src="../../dist/icon/logout.svg" alt="" class="w-6 h-6 brightness-0">
+                <span class="ms-4">Keluar</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!-- Sidebar Section End -->
+  
+  <!-- Main Section Start -->
+  <section class="p-4 sm:ml-[17rem]">
+    <div class="py-8 px-4 md:px-10 mt-16">
+  
+      <h4 class="mb-4 text-lg font-bold text-dark md:text-2xl">Ubah User</h4>
+      <div class="border border-gray-300 rounded-md p-4">
+        <form action="">
+          <div class="flex flex-wrap justify-center">
+            <div class="w-full md:w-1/2 md:pr-6">
+              <label for="nama" class="block mb-2 font-semibold text-sm text-gray-500">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" class="w-full mb-4 py-2 px-4 bg-white rounded-md border border-slate-300" placeholder="Masukkan Nama Lengkap" value="Admin Laundry" required>
+              
+              <label for="username" class="block mb-2 font-semibold text-sm text-gray-500">Username</label>
+              <input type="text" id="username" name="username" class="w-full mb-4 py-2 px-4 bg-white rounded-md border border-slate-300" placeholder="Masukkan Usename" value="adminlaundry" required>
+        
+              <label for="telepon" class="block mb-2 font-semibold text-sm text-gray-500">Nomor Telepon</label>
+              <input type="text" id="telepon" name="telepon" class="w-full mb-4 py-2 px-4 bg-white rounded-md border border-slate-300" placeholder="Masukkan Nomor Telepon" value="081234567891" required>
+
+              <label for="alamat" class="block mb-2 font-semibold text-sm text-gray-500">Alamat</label>
+              <textarea name="alamat" id="alamat" class="w-full py-3 px-4 bg-white rounded-lg border border-slate-300" rows="10"
+                placeholder="Masukkan Alamat" value="Jl. Mohamad Mekar Utama, Mekarkencana No.50, Bojongloa Kaler, Kota Bandung, Jawa Barat">Jl. Mohamad Mekar Utama, Mekarkencana No.50, Bojongloa Kaler, Kota Bandung, Jawa Barat</textarea>
+            </div>
+        
+            <div class="w-full md:w-1/2 md:pl-6">
+              <label for="role" class="block mb-2 font-semibold text-sm text-gray-500">Role</label>
+              <select name="role" id="role"
+                class="w-full mb-4 py-3 px-4 bg-white rounded-md border border-slate-300">
+                <option value="Proses Selesai">admin</option>
+                <option value="Sedang Diproses">pelanggan</option>
+              </select>
+  
+              <label for="email" class="block mb-2 font-semibold text-sm text-gray-500">Email</label>
+              <input type="email" id="email" name="email" class="w-full mb-4 py-2 px-4 bg-white rounded-md border border-slate-300"
+                placeholder="Masukkan Email" value="admin@gmail.com" required>
+
+              <label for="password" class="block mb-2 font-semibold text-sm text-gray-500">Password</label>
+              <input type="password" id="password" name="password" class="w-full mb-4 py-2 px-4 bg-white rounded-md border border-slate-300"
+                placeholder="Masukkan Password" value="$$2y$10$D7t5lwLJMLuHRdXRvQCzbe0S5kee7gYWn.eqjbIL4EvVoVmsh9vJe" required>
+        
+              <div class="flex justify-center items-center gap-4">
+                <a href="manajemen-user.html" class="w-full text-center text-white bg-red-600 py-2 rounded-xl">
+                  Kembali
+                </a>
+                <a href="manajemen-user.html" class="w-full text-center text-white bg-primary py-2 rounded-xl">
+                  Simpan
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Main Section Start -->
+
+  <!-- Footer Section Start -->
+  <footer class="text-center text-sm text-white bg-dark py-3 sm:ml-64 md:text-base scroll">
+    <span>Copyright LaundryPro. All Rights Reserved, 2023</span>
+  </footer>
+  <!-- Footer Section End -->
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

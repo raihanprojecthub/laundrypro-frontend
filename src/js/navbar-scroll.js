@@ -1,11 +1,11 @@
 // Navbar Scroll
-  window.onscroll = function () {
-    const header = document.querySelector('nav');
-    const fixedNav = header.offsetTop;
+window.onscroll = function () {
+  const header = document.querySelector('nav');
+  const fixedNav = header.offsetTop;
 
-    if (window.pageYOffset > fixedNav) {
-      header.classList.add('navbar-fixed');
-    } else {
-      header.classList.remove('navbar-fixed');
-    }
-  };
+  if (window.pageYOffset > fixedNav) {
+    header.classList.add('navbar-fixed');
+  } else {
+    header.classList.remove('navbar-fixed');
+  }
+};
