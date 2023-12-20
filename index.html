@@ -23,13 +23,42 @@
   </script>
 </head>
 <body>
+  <!-- Modal Section Start -->
+  <section id="modal" class="fixed z-50 top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div class="px-4 py-4">
+      <div class="flex justify-between items-center bg-white p-3 max-w-3xl mx-auto shadow-linear rounded-lg ">
+        <div class="pr-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-circle w-5 h-5 text-red-500"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+            <path d="M12 8v4" />
+            <path d="M12 16h.01" />
+          </svg>
+        </div>
+        <p>
+          <span class="text-red-500">Perhatian!</span> Ini adalah Demo Website tidak terhubung ke database
+        </p>
+        <div class="pl-2 mt-1 hover:text-red-500">
+          <button id="close-modal" class="transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Modal Section End -->
+  
   <!-- Navbar Section Start -->
-  <nav class="bg-white border-gray-200 fixed w-full z-50">
+  <nav class="bg-white border-gray-200 fixed w-full z-40">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-8 py-4 lg:py-6 xl:px-0">
       <img src="dist/img/laundrypro-logo.png" class="h-10" alt="Flowbite Logo" />
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
         <a href="login.html"><button type="button"
-          class="text-dark bg-white border-2 border-primary hover:bg-primary hover:text-white transition duration-300 font-medium rounded-lg text-sm px-4 py-2 text-center">Login</button></a>
+          class="text-dark bg-white border-2 border-primary hover:bg-primary hover:text-white transition duration-300 font-medium rounded-lg text-sm px-4 py-2 text-center">Masuk</button></a>
         <button data-collapse-toggle="navbar-cta" type="button" id="navbar-button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="navbar-cta" aria-expanded="false">
@@ -545,6 +574,13 @@
           isNavVisible = false;
         }
       }
+    });
+
+    const modalClose = document.querySelector('#close-modal')
+    const modalSection = document.querySelector('#modal')
+
+    modalClose.addEventListener('click', function () {
+      modalSection.classList.add('hidden')
     });
   </script>
   <script src="src/js/script.js"></script>

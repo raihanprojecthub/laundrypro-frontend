@@ -6,6 +6,19 @@
   <title>Pengaturan - LaundryPro</title>
   <link rel="shortcutcut icon" href="../../dist/img/laundrypro-logo.png">
   <link rel="stylesheet" href="../../css/output.css">
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "8473d6b8-a509-4455-93a0-290e95067ad6", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "e9c92c94-84a5-4304-96be-ca3fcbeff2a5", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function () {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
 </head>
 <body id="pengaturan">
   <!-- Navbar Section Start -->
@@ -20,7 +33,7 @@
       <img src="../../dist/img/laundrypro-logo.png" class="h-10" alt="Flowbite Logo" />
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
         <a href="akun-saya.html">
-          <img src="../../dist/img/foto-profile.png" alt="" class="w-10 h-10 rounded-full">
+          <img src="../../dist/img/profile-default.png" alt="" class="w-10 h-10 rounded-full">
         </a>
         <button data-collapse-toggle="navbar-cta" type="button" id="navbar-button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -122,7 +135,7 @@
   
   <!-- Main Section Start -->
   <div class="p-4 sm:ml-[17rem]">
-    <div class="w-full px-4 py-8 md:px-12 mt-16">
+    <div class="w-full px-4 py-8 pb-20 md:px-12 mt-16">
       <div class="mb-8">
         <h1 class="mb-4 text-xl font-bold text-sky-500 md:text-3xl">Akun Saya</h1>
         <img src="../../dist/img/ubah-foto.png" alt="" class="rounded-full mx-auto" width="150">

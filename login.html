@@ -13,7 +13,7 @@
     <div class="bg-primary flex flex-row items-center max-w-4xl" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
       <img src="dist/img/login-image.png" alt="Gambar Login" class="hidden md:block max-w-[50%] h-auto">
       <div class="flex-1 px-8 md:px-16 text-center mt-10">
-        <h2 class="text-xl text-white font-semibold mb-1">LOGIN</h2>
+        <h2 class="text-2xl text-white font-semibold mb-1">MASUK</h2>
         <span class="text-slate-300">Silahkan masuk ke akun anda</span>
         <form class="text-left mt-10">
           <div class="flex relative items-center mb-8">
@@ -31,10 +31,12 @@
             <input type="password" id="password" name="password" class="w-full bg-slate-200 text-sm py-3 pl-16 rounded-3xl outline-none" placeholder="Password" required>
           </div>
           
-          <a href="src/pelanggan/beranda.html" class="block text-center w-full text-sm font-bold py-3 bg-slate-100 rounded-full">Login</a>
+          <div class="flex text-center w-full text-base font-bold py-3 bg-slate-100 rounded-full">
+            <a href="src/admin/dashboard.html" class="w-1/2 border-r border-black">Admin</a>
+            <a href="src/pelanggan/beranda.html" class="w-1/2 border-l border-black">Pelanggan</a>
+          </div>
         </form>
         <p class="mt-2 text-slate-300 text-sm">Belum Punya Akun? <a href="register.html" class="text-white">Daftar</a></p>
-        <a href="src/admin/dashboard.html" class="block mt-8 text-center w-full text-sm font-bold py-3 text-transparent bg-transparent rounded-full">Login</a>
       </div>
     </div>
   </section>
